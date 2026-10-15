@@ -8,5 +8,38 @@ header{
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+        .logo{
+            display: inline-block; /* le pongo inline block por que es un enlace */
+            background-color: var(--azul-secundario);
+            padding: 20px;
+            border-radius: 10px 0px 0px 0px;
+            width: auto;
+            height: 70px;
+            position: relative;
+
+            &::before{
+                content: '';
+                display: block;
+                width: 100%;
+                background-color: var(--azul-secundario);
+                height: 20px;
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+
+            }
+
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                border-top: 70px solid transparent;
+                border-right: 70px solid transparent;
+                
+                border-bottom: 70px solid var(--azul-secundario);
+                right: -69.5px;
+                top: -69.5px;
+            }
+        }
     
 }
