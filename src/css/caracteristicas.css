@@ -1,4 +1,22 @@
-.carcteristicas {
-    margin-top: 140px;
-    margin-bottom: 100px;
-}
+    .caracteristicas {
+        margin-top: 140px;
+        margin-bottom: 100px;
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            .previews {
+                background-color: black;
+                border-radius: 5px;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+            }
+            .thumb {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
