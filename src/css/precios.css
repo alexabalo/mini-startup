@@ -1,0 +1,13 @@
+.precios{
+    margin-bottom: 100px;
+   .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .plan{
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+    }
+   }
+}
